@@ -12,6 +12,18 @@ It is also a standalone git repo (remote: `shay-meredith/useful-skills`) intende
 
 ## Common workflows
 
+### Clone this repo (including skills)
+
+```sh
+git clone --recurse-submodules https://github.com/shay-meredith/useful-skills.git
+```
+
+Or, if already cloned:
+
+```sh
+git submodule update --init --recursive
+```
+
 ### Add a new skill from a git repo (preferred)
 
 1) From `Skills/`:
@@ -53,4 +65,3 @@ git push
 - Do not install skills into any agent/CLI unless explicitly asked; this repo is for tracking/reference.
 - Keep credentials/secrets out of this repo.
 - Prefer small, well-named folders; add a short `README.md` per skill if the upstream repo lacks context.
-
